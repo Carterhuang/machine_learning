@@ -1,0 +1,56 @@
+1. All implementations are written in Python.
+2. Required python modules include numpy and matplotlib.
+3. Below is a list of source files.
+   
+    prob2.py  
+    prob3.py (see below for running instructions)
+
+4. Below are running instructions for each file.
+
+   ############
+   # prob2.py #
+   ############
+   usage: prob2.py [-h] [-g] [-k [KNEIGHBORS]] [-y [YMULTIPLE]]
+
+   Implementation for PROBLEM 2
+   optional arguments:
+   -h, --help            show this help message and exit
+   -g, --grid            Print the grid and then draw the boundary
+   -k [KNEIGHBORS], --kneighbors [KNEIGHBORS]
+                         Specify number of neighnors selected for knn method. k
+                         is initialized to be 1 by default
+   -y [YMULTIPLE], --ymultiple [YMULTIPLE]
+                         For problem 2(b), it requires the y coordinates to be
+                         multiplied by 5. To see how that affects the result,
+                         add -y 5 in command line
+
+    More details:
+    For problem2(a), you may try:
+       "python prob2.py" or
+       "python prob2.py -g" to see the grid.
+    
+    For problem2(b),
+       "python prob2.py -y5"
+
+    Por problem2(c),
+        "python prob3.py -k 3" 
+        or "python prob3.py -k 3 -g" to see the grid.
+
+    For more questions, do "python prob2.py -h" or email hh548.
+
+
+   ############
+   # prob3.py #
+   ############
+   Usage: python rob3.py [-h] [-n] [file]
+
+   The KNN implementation for Assignment 1
+
+   required arguments:
+     file             The path of the input data file.
+
+   optional arguments:
+     -h, --help       show help message and exit
+     -n, --normalize  When specified, the data will be normalized before feeding
+                      to knn algorithm.
+  
